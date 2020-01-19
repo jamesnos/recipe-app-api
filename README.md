@@ -21,3 +21,11 @@ docker-compose run app sh -c "python manage.py startapp core"
 ```
 docker-compose run app sh -c "python manage.py makemigrations core"
 ```
+
+
+
+```
+Django>=2.1.0,<2.2.0
+djangorestframework>=3.8.2,<3.9.0
+flake8>=3.6.0,<3.7.0
+```
