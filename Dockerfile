@@ -14,7 +14,7 @@ RUN apk del .tmp-build-deps
 # Setup directory structure
 RUN mkdir /app
 WORKDIR /app
-COPY ./app/ /app
+COPY ./src/ /app
 
 RUN adduser -D user
 USER user
