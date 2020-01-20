@@ -1,6 +1,6 @@
-# recipe-app-api
+# Django Python Advanced TDD
 Recipe App API source code
-
+https://www.udemy.com/course/django-python-advanced/
 
 ### Start django project
 ```
