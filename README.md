@@ -2,6 +2,11 @@
 Recipe App API source code
 https://www.udemy.com/course/django-python-advanced/
 
+### Start locally
+```
+docker-compose up
+```
+
 ### Start django project
 ```
 docker-compose run app sh -c "django-admin.py startproject app ."
