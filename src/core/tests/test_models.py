@@ -8,6 +8,7 @@ def sample_user(email='test@foo.com', password='testpassword'):
     """Create a sample user"""
     return get_user_model().objects.create_user(email, password)
 
+
 class ModelTests(TestCase):
 
     def test_create_user_with_email_sucessful(self):
@@ -64,4 +65,3 @@ class ModelTests(TestCase):
             name="Cucumber"
         )
         self.assertEqual(str(ingredient), ingredient.name)
-
