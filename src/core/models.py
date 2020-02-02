@@ -6,9 +6,9 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, \
 from django.conf import settings
 
 
-def recipe_image_file_path(instance, file_name):
+def recipe_image_file_path(instance, filename):
     """Generate file path for new recipe image"""
-    ext = file_name.split('.')[-1]
+    ext = filename.split('.')[-1]
     filename = f'{uuid.uuid4()}.{ext}'
 
     return os.path.join('uploads/recipe/', filename)
