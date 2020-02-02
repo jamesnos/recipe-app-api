@@ -138,5 +138,5 @@ AUTH_USER_MODEL = 'core.User'
 # Need to update tests as this nests the resposne
 # REST_FRAMEWORK = {
 #     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-#     'PAGE_SIZE': 2
+#     'PAGE_SIZE': 100
 # }

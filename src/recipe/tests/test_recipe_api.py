@@ -218,7 +218,9 @@ class RecipeImageUploadTests(TestCase):
 
     def setUp(self):
         self.client = APIClient()
-        self.user = get_user_model().objects.create_user('user@foo.com', 'testpass')
+        self.user = get_user_model().objects.create_user(
+            'user@foo.com', 'testpass'
+        )
         self.client.force_authenticate(self.user)
         self.recipe = sample_recipe(user=self.user)
 
