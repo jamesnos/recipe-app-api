@@ -18,6 +18,8 @@ class BaseRecipeAttrViewSet(viewsets.GenericViewSet,
 
     def get_queryset(self):
         """Return objects for the current authenticated user only"""
+        foo = self.request.user.get_all_permissions()
+        print(foo)
         assigned_only = bool(
             int(self.request.query_params.get('assigned_only', 0))
         )
