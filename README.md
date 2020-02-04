@@ -37,6 +37,23 @@ docker-compose run app sh -c "python manage.py createsuperuser"
 docker-compose run --rm app sh -c "python manage.py startapp user"
 ```
 
+### Seed data with migrations
+```
+docker-compose run --rm app sh -c "python manage.py makemigrations --empty core"
+# https://docs.djangoproject.com/en/3.0/ref/migration-operations/
+```
+
+### Dump Data for fixtures
+```
+docker-compose run app sh -c "python manage.py dumpdata"
+```
+
+### Run fixtures
+```
+docker-compose run app sh -c "python manage.py loaddata auth_groups"
+# https://docs.djangoproject.com/en/3.0/howto/initial-data/
+```
+
 
 ```
 Django>=2.1.0,<2.2.0

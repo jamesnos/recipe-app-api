@@ -1,0 +1,32 @@
+[{
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "AddTag",
+            "permissions": [
+                29,
+                32
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 68,
+        "fields": {
+            "name": "Reinhardt",
+            "permissions": [
+
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 69,
+        "fields": {
+            "name": "foo",
+            "permissions": [
+
+            ]
+        }
+    }
+]
